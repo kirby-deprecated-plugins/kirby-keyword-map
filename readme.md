@@ -39,9 +39,9 @@ fields:
     target: mytext
 ```
 
-### `mytext`
+### A field with a textarea
 
-It's a textarea that we use to write our content.
+In this case we call our textarea field `mytext` but you can call it anything.
 
 ### `keywordmap`
 
