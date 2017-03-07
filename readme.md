@@ -43,7 +43,7 @@ fields:
 
 In this case we call our textarea field `mytext` but you can call it anything.
 
-### `keywordmap`
+### A field with a `keywordmap` field
 
 Our new field has two required options:
 
