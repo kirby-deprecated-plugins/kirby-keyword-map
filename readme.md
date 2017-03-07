@@ -22,7 +22,7 @@ Sorry about the buggy animation. The colors are a bit off sometimes.
 - Support for multi languages
 - Will ignore these characters `['-', '#', ',', '.']`
 
-[**Installation instructions**](docs/installation-instructions.md)
+[**Installation instructions**](docs/install.md)
 
 ## Setup
 
