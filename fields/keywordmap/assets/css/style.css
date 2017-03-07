@@ -1,0 +1,33 @@
+.keywordmap {
+  padding: 1.5em;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-top: none;
+  line-height: 24px; }
+  .keywordmap mark {
+    background: #8dae28;
+    color: #fff;
+    display: inline-block;
+    padding: 0 2px;
+    border-radius: 3px;
+    line-height: 18px; }
+    .keywordmap mark mark {
+      background: #b2d058;
+      background: rgba(0, 0, 0, 0.2);
+      margin: 2px 0; }
+
+.keywordmap-tags {
+  border-bottom: 1px solid #efefef; }
+  .keywordmap-tags.input-is-focused {
+    border: 2px solid #8dae28 !important; }
+    .keywordmap-tags.input-is-focused .tag-label:focus {
+      background: #eee; }
+  .keywordmap-tags .tag {
+    background: #eee; }
+    .keywordmap-tags .tag .tag-label {
+      color: #000; }
+    .keywordmap-tags .tag .tag-x {
+      color: #777;
+      border-left: 1px solid #fff !important; }
+      .keywordmap-tags .tag .tag-x:hover {
+        color: #000; }

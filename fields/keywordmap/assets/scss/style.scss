@@ -1,0 +1,50 @@
+.keywordmap {
+	padding: 1.5em;
+	background: #fff;
+	border: 2px solid #ddd;
+	border-top: none;
+	line-height: 24px;
+	mark {
+		background: #8dae28;
+		color: #fff;
+		display: inline-block;
+		padding: 0 2px;
+		border-radius: 3px;
+		line-height: 18px;
+
+		mark {
+			background: #b2d058;
+			background: rgba(0,0,0,.2);
+			margin: 2px 0;
+		}
+	}
+}
+
+.keywordmap-tags {
+	border-bottom: 1px solid #efefef;
+
+	&.input-is-focused {
+		border: 2px solid #8dae28 !important;
+
+		.tag-label:focus {
+			background: #eee;
+		}
+	}
+
+	.tag {
+		background: #eee;
+
+		.tag-label {
+			color: #000;
+		}
+
+		.tag-x {
+			color: #777;
+			border-left: 1px solid #fff !important;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
