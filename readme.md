@@ -70,6 +70,12 @@ With some more keyword phrases and some more text it can look like this:
 
 ## Changelog
 
+**0.2**
+
+- Fixed major bug that made the field not work with a single language installation.
+- Remove value in console.log.
+- Color a keyword tab if it's in the text.
+
 **0.1**
 
 - Initial release 

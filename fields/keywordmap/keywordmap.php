@@ -16,8 +16,12 @@ class KeywordmapField extends TagsField {
 	}
 
 	public function input() {
-		$lang = site()->language()->code();
-		$content = $this->page->content($lang)->get($this->name())->value();
+		if(site()->language()) {
+			$lang = site()->language()->code();
+			$content = $this->page->content($lang)->get($this->name())->value();
+		} else {
+			$content = $this->page->content()->get($this->name())->value();
+		}
 
 		$input = parent::input();
 		$input->attr['value'] = (!empty($content)) ? $input->attr['value'] : '';
@@ -33,7 +37,9 @@ class KeywordmapField extends TagsField {
 	public function element() {
 		$element = parent::element();
 		$element->data('field', self::$fieldname);
-		$element->data('target', $this->target);
+		if(isset($this->target)) {
+			$element->data('target', $this->target);
+		}
 		return $element;
 	}
 }

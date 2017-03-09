@@ -6,8 +6,6 @@
 			var keywords = [];
 			var target = field.attr('data-target');
 
-			console.log(target);
-
 			if(field.data( fieldname )) {
 				return true;
 			} else {
@@ -32,12 +30,17 @@
 function kwtMark(field, keywords) {
 	var keywordmap = field.find('.keywordmap');
 	keywordmap.unmark();
+	field.find('.keywordmap-tags [data-tag]').removeClass('active');
 	keywordmap.mark(keywords, {
 		'separateWordSearch': false,
 		'diacritics': false,
 		'accuracy': {
 			'value': 'exactly',
 			'limiters': ['-', '#', ',', '.']
+		},
+		'filter': function(textNode, foundTerm, totalCounter, counter){
+			field.find('.keywordmap-tags [data-tag="' + foundTerm + '"]').addClass('active');
+			return true;
 		}
 	});
 }

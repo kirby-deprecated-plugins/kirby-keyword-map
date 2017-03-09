@@ -10,7 +10,7 @@
 		display: inline-block;
 		padding: 0 2px;
 		border-radius: 3px;
-		line-height: 18px;
+		line-height: 16px;
 
 		mark {
 			background: #b2d058;
@@ -21,20 +21,37 @@
 }
 
 .keywordmap-tags {
-	border-bottom: 1px solid #efefef;
+	border-bottom: 2px solid #efefef;
 
 	&.input-is-focused {
 		border: 2px solid #8dae28 !important;
 
+		.tag.active .tag-label:focus {
+			background: #8dae28;
+		}
 		.tag-label:focus {
 			background: #eee;
 		}
 	}
 
 	.tag {
-		background: #eee;
+		&.active {
+			.tag-label {
+				background: #8dae28;
+				color: #fff;
+			}
+
+			.tag-x {
+				color: rgba(255,255,255,.75);
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
 
 		.tag-label {
+			background: #eee;
 			color: #000;
 		}
 
