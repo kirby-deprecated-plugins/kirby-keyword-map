@@ -1,18 +1,12 @@
 # Kirby Keyword Map
 
-*Version 0.1*
+*Version 0.2*
 
 See SEO keywords in your text as a map.
 
-**Screenshot**
+*This plugin has nothing to to do with the meta keywords tag. It's keywords inside your texts that are targeted.*
 
-![](docs/result.png)
-
-**Animation**
-
-Sorry about the buggy animation. The colors are a bit off sometimes.
-
-![](docs/keywordmap.gif)
+![](docs/screenshot.png)
 
 **Features**
 
@@ -20,6 +14,7 @@ Sorry about the buggy animation. The colors are a bit off sometimes.
 - Support for multiple keyword maps
 - Support for mutiple words in a keyword phrase
 - Support for multi languages
+- Highlights both keywords in tags and text.
 - Will ignore these characters `['-', '#', ',', '.']`
 
 [**Installation instructions**](docs/install.md)
