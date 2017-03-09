@@ -39,7 +39,7 @@ function kwtMark(field, keywords) {
 			'limiters': ['-', '#', ',', '.']
 		},
 		'filter': function(textNode, foundTerm, totalCounter, counter){
-			field.find('.keywordmap-tags [data-tag="' + foundTerm + '"]').addClass('active');
+			field.find('.keywordmap-tags [data-tag="' + foundTerm.toLowerCase() + '"]').addClass('active');
 			return true;
 		}
 	});
