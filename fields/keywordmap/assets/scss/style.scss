@@ -26,16 +26,21 @@
 	&.input-is-focused {
 		border: 2px solid #8dae28 !important;
 
-		.tag.active .tag-label:focus {
-			background: #8dae28;
-		}
+		.tag,
 		.tag-label:focus {
 			background: #eee;
+		}
+
+		.tag.active,
+		.tag.active .tag-label:focus {
+			background: #8dae28;
 		}
 	}
 
 	.tag {
+		background: #eee;
 		&.active {
+			background: #8dae28;
 			.tag-label {
 				background: #8dae28;
 				color: #fff;
