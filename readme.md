@@ -59,9 +59,7 @@ Click on the top of the field to keyword phrases. Both single and multiple words
 
 ### Results
 
-With some more keyword phrases and some more text it can look like this:
-
-![](docs/result.png)
+See screenshot on top to see the results.
 
 ## Changelog
 
