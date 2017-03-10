@@ -31,6 +31,7 @@ function kwtMark(field, keywords) {
 	var keywordmap = field.find('.keywordmap');
 	keywordmap.unmark();
 	field.find('.keywordmap-tags [data-tag]').removeClass('active');
+	field.find('.keywordmap-tags .kwt-count').remove();
 	keywordmap.mark(keywords, {
 		'separateWordSearch': false,
 		'diacritics': false,
