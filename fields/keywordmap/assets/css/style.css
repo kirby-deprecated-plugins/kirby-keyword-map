@@ -8,13 +8,21 @@
     background: #8dae28;
     color: #fff;
     display: inline-block;
-    padding: 0 2px;
+    padding: 0 4px;
     border-radius: 3px;
-    line-height: 16px; }
+    line-height: 20px;
+    margin: 2px; }
     .keywordmap mark mark {
       background: #b2d058;
       background: rgba(0, 0, 0, 0.2);
-      margin: 2px 0; }
+      margin: 4px 0; }
+
+.kwt-count {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0 .25em;
+  border-radius: 3px;
+  font-size: 0.8em;
+  margin-left: .5em; }
 
 .keywordmap-tags {
   border-bottom: 2px solid #efefef; }

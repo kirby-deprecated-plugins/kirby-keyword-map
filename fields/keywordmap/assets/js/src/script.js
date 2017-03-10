@@ -38,8 +38,12 @@ function kwtMark(field, keywords) {
 			'value': 'exactly',
 			'limiters': ['-', '#', ',', '.']
 		},
-		'filter': function(textNode, foundTerm, totalCounter, counter){
-			field.find('.keywordmap-tags [data-tag="' + foundTerm.toLowerCase() + '"]').addClass('active');
+		'filter': function(textNode, keyword, totalCounter, counter){
+			var keyword = keyword.toLowerCase();
+			var count = parseInt(counter+1);
+			var tag = field.find('.keywordmap-tags [data-tag="' + keyword + '"]');
+			tag.addClass('active');
+			tag.find('button').html(keyword + '<span class="kwt-count">' + count + '</span>');
 			return true;
 		}
 	});

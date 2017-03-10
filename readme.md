@@ -1,6 +1,6 @@
 # Kirby Keyword Map
 
-*Version 0.2*
+*Version 0.3*
 
 See SEO keywords in your text as a map.
 
@@ -64,6 +64,11 @@ With some more keyword phrases and some more text it can look like this:
 ![](docs/result.png)
 
 ## Changelog
+
+**0.3**
+
+- Added word counters.
+- Minor css fixes.
 
 **0.2**
 
