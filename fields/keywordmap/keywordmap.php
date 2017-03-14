@@ -12,7 +12,7 @@ class KeywordmapField extends TagsField {
 
 	public function __construct() {
 		$this->separator = ',';
-		$this->lower     = false;
+		$this->lower = true;
 	}
 
 	public function input() {

@@ -1,11 +1,10 @@
 .keywordmap {
-	padding: 1.5em;
+	padding: .5em;
 	background: #fff;
 	border: 2px solid #ddd;
 	border-top: none;
 	line-height: 24px;
 	mark {
-		background: #8dae28;
 		color: #fff;
 		display: inline-block;
 		padding: 0 4px;
@@ -14,8 +13,6 @@
 		margin: 2px;
 
 		mark {
-			background: #b2d058;
-			background: rgba(0,0,0,.2);
 			margin: 4px 0;
 		}
 	}
@@ -49,9 +46,7 @@
 	.tag {
 		background: #eee;
 		&.active {
-			background: #8dae28;
 			.tag-label {
-				background: #8dae28;
 				color: #fff;
 			}
 

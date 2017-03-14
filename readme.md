@@ -1,12 +1,12 @@
 # Kirby Keyword Map
 
-*Version 0.3*
+*Version 0.4* - ***[Changelog](docs/changelog.md)***
 
 See SEO keywords in your text as a map.
 
 *This plugin has nothing to to do with the meta keywords tag. It's keywords inside your texts that are targeted.*
 
-![](docs/screenshot.png)
+![](docs/preview.png)
 
 **Features**
 
@@ -61,23 +61,6 @@ Click on the top of the field to keyword phrases. Both single and multiple words
 
 See screenshot on top to see the results.
 
-## Changelog
-
-**0.3**
-
-- Added word counters.
-- Minor css fixes.
-
-**0.2**
-
-- Fixed major bug that made the field not work with a single language installation.
-- Remove value in console.log.
-- Color a keyword tab if it's in the text.
-
-**0.1**
-
-- Initial release 
-
 ## Requirements
 
 - [**Kirby**](https://getkirby.com/) 2.4.1+
@@ -96,3 +79,4 @@ It is discouraged to use this plugin in any project that promotes racism, sexism
 
 - [Jens Törnell](https://github.com/jenstornell)
 - [mark.js](https://markjs.io) - Javascript to hightlight keywords in a text
+- [Color Hash](https://github.com/zenozeng/color-hash) - Javascript to hash strings to color codes.

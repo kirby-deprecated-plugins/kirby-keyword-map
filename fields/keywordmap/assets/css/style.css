@@ -1,11 +1,10 @@
 .keywordmap {
-  padding: 1.5em;
+  padding: .5em;
   background: #fff;
   border: 2px solid #ddd;
   border-top: none;
   line-height: 24px; }
   .keywordmap mark {
-    background: #8dae28;
     color: #fff;
     display: inline-block;
     padding: 0 4px;
@@ -13,8 +12,6 @@
     line-height: 20px;
     margin: 2px; }
     .keywordmap mark mark {
-      background: #b2d058;
-      background: rgba(0, 0, 0, 0.2);
       margin: 4px 0; }
 
 .kwt-count {
@@ -36,15 +33,12 @@
       background: #8dae28; }
   .keywordmap-tags .tag {
     background: #eee; }
-    .keywordmap-tags .tag.active {
-      background: #8dae28; }
-      .keywordmap-tags .tag.active .tag-label {
-        background: #8dae28;
+    .keywordmap-tags .tag.active .tag-label {
+      color: #fff; }
+    .keywordmap-tags .tag.active .tag-x {
+      color: rgba(255, 255, 255, 0.75); }
+      .keywordmap-tags .tag.active .tag-x:hover {
         color: #fff; }
-      .keywordmap-tags .tag.active .tag-x {
-        color: rgba(255, 255, 255, 0.75); }
-        .keywordmap-tags .tag.active .tag-x:hover {
-          color: #fff; }
     .keywordmap-tags .tag .tag-label {
       background: #eee;
       color: #000; }
