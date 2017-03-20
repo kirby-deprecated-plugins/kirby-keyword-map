@@ -2,9 +2,9 @@
 
 *Version 0.4* - ***[Changelog](docs/changelog.md)***
 
-See SEO keywords in your text as a map.
+Preview your important keywords in your text as a map. Good for SEO.
 
-*This plugin has nothing to to do with the meta keywords tag. It's keywords inside your texts that are targeted.*
+*This plugin has nothing to to do with the meta keywords tag. It's the keywords inside your texts that are targeted.*
 
 ![](docs/preview.png)
 
@@ -15,7 +15,9 @@ See SEO keywords in your text as a map.
 - Support for mutiple words in a keyword phrase
 - Support for multi languages
 - Highlights both keywords in tags and text.
-- Will ignore these characters `['-', '#', ',', '.']`
+- Counters for matched words.
+- Will ignore these characters `-#,.!?()[]`.
+- Possible to show or hide the preview and just show the keywords.
 
 [**Installation instructions**](docs/install.md)
 

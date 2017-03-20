@@ -12,7 +12,8 @@
 				field.data( fieldname, true );
 			}
 			
-			kwm.setTextarea(field, target);			
+			kwm.setTextarea(field, target);
+			kwm.toggle(field);
 
 			field.find('input').on('change paste keyup', function() {
 				keywords = $(this).val().split(',');
@@ -23,6 +24,10 @@
 				kwm.setTextarea(field, target);
 				kwm.mark(field, keywords);
 			});
+
+			if(localStorage.getItem('kwm-disabled') !== null) {
+				field.find('.field-content').addClass('kwm-disabled');
+			}
 		});
 	};
 
@@ -45,11 +50,23 @@
 				'diacritics': false,
 				'accuracy': {
 					'value': 'exactly',
-					'limiters': ['-', '#', ',', '.']
+					'limiters': ['-', '#', ',', '.', '!', '?', '(', ')', '[', ']']
 				},
 				'done': function() {
 					kwm.setTags(field);
 					kwm.setTextareaColor(field, keywords);
+				}
+			});
+		};
+
+		fn.toggle = function(field) {
+			field.find('.kwm-toggle').click(function() {
+				if($(this).parent().hasClass('kwm-disabled')) {
+					$(this).parent().removeClass('kwm-disabled');
+					localStorage.removeItem('kwm-disabled');
+				} else {
+					$(this).parent().addClass('kwm-disabled');
+					localStorage.setItem('kwm-disabled', '1');
 				}
 			});
 		};

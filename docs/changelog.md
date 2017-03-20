@@ -1,5 +1,12 @@
 # Changelog
 
+**0.5**
+
+- Updated limiters with `!?()[]` characters which means that it will match the keywords better.
+- Changed cursor to `not-allowed` to make the preview look a bit less editable.
+- Possible to toggle the preview on/off. Good for long texts.
+- Toggle mode is saved to local storage to be remembered in the next refresh. 
+
 **0.4**
 
 - The keywords now have different colors, based on [color-hash](https://github.com/zenozeng/color-hash).

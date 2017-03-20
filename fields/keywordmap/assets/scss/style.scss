@@ -4,6 +4,7 @@
 	border: 2px solid #ddd;
 	border-top: none;
 	line-height: 24px;
+	cursor: not-allowed;
 	mark {
 		color: #fff;
 		display: inline-block;
@@ -18,6 +19,40 @@
 	}
 }
 
+.kwm-toggle {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	text-align: center;
+	padding: .5em;
+	background: #eee;
+	cursor: pointer;
+	user-select: none;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+}
+
+.kwm-show {
+	display: none;
+}
+.kwm-hide {
+	display: block;
+}
+
+.kwm-disabled {
+	.kwm-show {
+		display: block;
+	}
+	.kwm-hide {
+		display: none;
+	}
+	.kwm-toggle {
+		border-bottom: 2px solid #ddd;
+	}
+	.keywordmap {
+		display: none;
+	}
+}
+
 .kwt-count {
 	background: rgba(0,0,0,.2);
 	padding: 0 .25em;
@@ -28,6 +63,7 @@
 
 .keywordmap-tags {
 	border-bottom: 2px solid #efefef;
+	border-bottom: none;
 
 	&.input-is-focused {
 		border: 2px solid #8dae28 !important;
