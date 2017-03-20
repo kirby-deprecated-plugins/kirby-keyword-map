@@ -1,6 +1,6 @@
 # Kirby Keyword Map
 
-*Version 0.4* - ***[Changelog](docs/changelog.md)***
+*Version 0.5* - ***[Changelog](docs/changelog.md)***
 
 Preview your important keywords in your text as a map. Good for SEO.
 
